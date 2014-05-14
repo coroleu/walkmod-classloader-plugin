@@ -65,10 +65,14 @@
             <version>[1.0.0,2.0.0)</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-model-builder</artifactId>
-            <version>3.2.1</version>
-            <scope>compile</scope>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-api-maven</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.shrinkwrap.resolver</groupId>
+            <artifactId>shrinkwrap-resolver-spi</artifactId>
+            <version>2.0.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -82,11 +86,7 @@
             <version>3.1.1.RELEASE</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.archiva</groupId>
-            <artifactId>maven2-repository</artifactId>
-            <version>2.0.1</version>
-        </dependency>
+
     </dependencies>
     <profiles>
         <profile>
