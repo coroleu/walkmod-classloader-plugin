@@ -14,6 +14,15 @@ public class PomReaderTest extends TestCase {
     public void testeable() {
         assertTrue(true);
     }
+
+    @Test
+    public void testResolveShouldRetrievePomDependencies() {
+        File pom = new File("src/test/resources/pom-test.xml");
+        assertTrue(pom.exists());
+        PomReader reader = new PomReader(pom);
+        List dependencies = reader.resolve();
+        assertFalse(dependencies.isEmpty());
+    }
 	
 
 }
